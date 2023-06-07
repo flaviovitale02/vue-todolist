@@ -18,7 +18,10 @@
             </h1>
         </div>
         <hr>
-        <ul class="p-3">
+        <h2 v-if="toDoList.length === 0" class="fs-4 p-3">
+            Non ci sono cose da fare al momento...
+        </h2>
+        <ul v-else class="p-3">
             <li class="d-flex justify-content-between p-2" v-for="(toDoItem, index) in toDoList" @click="checkToDoElement(index)">
                 <span :class="toDoItem.done ? 'done' : ''">
                     {{toDoItem.text}}
@@ -36,3 +39,8 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- <h2 v-if="todoList.length === 0">
+    There are no more todo elements... Please add a new one to start listing them!
+</h2>
+
+<ul v-else> -->
