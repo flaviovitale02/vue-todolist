@@ -49,12 +49,3 @@ createApp({
     }
 }).mount('#app')
 
-// addNewTodoElement(todoElement){
-//     if (this.newElement !== ''){
-//         this.todoList.push({
-//             text: todoElement,
-//             done: false,
-//         });
-//         this.newElement = '';
-//     }
-// },
