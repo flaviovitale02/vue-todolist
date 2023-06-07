@@ -19,9 +19,11 @@
         </div>
         <hr>
         <ul class="p-3">
-            <li class="d-flex justify-content-between p-2" v-for="(toDoItem, index) in toDoList">
-                <span>{{toDoItem}}</span>
-                <i class="fa-solid fa-trash" @click="removeToDoelement"></i>
+            <li class="d-flex justify-content-between p-2" v-for="(toDoItem, index) in toDoList" @click="checkToDoElement(index)">
+                <span :class="toDoItem.done ? 'done' : ''">
+                    {{toDoItem.text}}
+                </span>
+                <i class="fa-solid fa-trash" @click="removeToDoelement(index)"></i>
             </li>
         </ul>
         <div class="p-3 d-flex "> 

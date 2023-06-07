@@ -16,3 +16,7 @@ li{
 button{
     margin-left: 2rem;
 }
+
+.done{
+    text-decoration: line-through;
+}
