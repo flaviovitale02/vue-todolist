@@ -4,27 +4,6 @@ createApp({
     data() {
         return {
             toDoList : [
-                {
-                    text : 'mangiare',
-                    done : false
-                },
-                {
-                    text : 'dormire',
-                    done :false
-                },
-                {
-                    text : 'volare',
-                    done : true
-                },
-                {
-                    text : 'mangiare',
-                    done : false
-                },
-                {
-                    text : 'mangiare',
-                    done : true
-                }
-
             ],
             newElement : '',
         }
