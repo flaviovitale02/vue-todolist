@@ -32,11 +32,10 @@ createApp({
     methods:{
         addNewToDoElement(toDoElement){
             if(toDoElement !== ''){
-                this.toDoList.push(
-                    (
-                        toDoElement
-                        )
-                )
+                this.toDoList.push({
+                    text: toDoElement,
+                    done: false
+            })
             this.newElement = ''
             }
             
@@ -49,3 +48,13 @@ createApp({
         }
     }
 }).mount('#app')
+
+// addNewTodoElement(todoElement){
+//     if (this.newElement !== ''){
+//         this.todoList.push({
+//             text: todoElement,
+//             done: false,
+//         });
+//         this.newElement = '';
+//     }
+// },
